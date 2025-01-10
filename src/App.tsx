@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <TonConnectUIProvider manifestUrl="https://<YOUR_APP_URL>/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://noviiich.github.io/telegram-mini-apps/tonconnect-manifest.json">
     <div className="app">
       <Header />
     </div>
