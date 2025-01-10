@@ -1,6 +1,7 @@
 import './App.css'
 import WebApp from '@twa-dev/sdk'
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
+import { Header } from './components/Header/Header';
 
 WebApp.ready();
 
@@ -14,13 +15,14 @@ function App() {
   return (
     <>
     <TonConnectUIProvider manifestUrl="https://<YOUR_APP_URL>/tonconnect-manifest.json">
-    <div className="container">
-        <h1>Manage Your Tokens</h1>
+    <div className="app">
+      <Header />
+        {/* <h1>Manage Your Tokens</h1>
         <p className="info">Quickly deposit or withdraw your tokens.</p>
         <div className="buttons">
             <button className="button deposit" onClick={handleDeposit}>Deposit</button>
             <button className="button withdraw">Withdraw</button>
-        </div>
+        </div> */}
     </div>
     </TonConnectUIProvider>
     </>
