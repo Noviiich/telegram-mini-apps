@@ -8,7 +8,7 @@ interface CardProps {
   onWithdraw: () => void;
 }
 
-export const Card: React.FC<CardProps> = ({ id, name, image, onDeposit, onWithdraw }) => {
+export const Card: React.FC<CardProps> = ({ name, image, onDeposit, onWithdraw }) => {
   return (
     <div className="card">
       <img src={image} alt={name} />
