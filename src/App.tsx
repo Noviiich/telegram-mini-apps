@@ -1,6 +1,6 @@
 import './App.css'
 import WebApp from '@twa-dev/sdk'
-import { TonConnectUIProvider, TonConnectButton } from '@tonconnect/ui-react';
+import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { Header } from './components/Header/Header';
 import { ContractList } from "./components/ContractList/ContractList";
 
