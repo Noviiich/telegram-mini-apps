@@ -3,9 +3,9 @@ import { Card } from "../Card/Card";
 
 export const ContractList: React.FC = () => {
     const contracts = [
-        { id: 1, name: "Contract #1", image: "https://source.unsplash.com/random/100x100?technology" },
-        { id: 2, name: "Contract #2", image: "https://source.unsplash.com/random/100x100?blockchain" },
-        { id: 3, name: "Contract #3", image: "https://source.unsplash.com/random/100x100?finance" }
+        { id: 1, name: "Contract #1", image: '/static/1.jpg' },
+        { id: 2, name: "Contract #2", image: "/static/2.jpg" },
+        { id: 3, name: "Contract #3", image: "/static/3.jpg" }
       ];
 
   const handleDeposit = (id: number) => {
