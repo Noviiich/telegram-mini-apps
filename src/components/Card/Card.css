@@ -1,0 +1,45 @@
+button {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-size: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+  
+button:hover {
+    background: #74b9ff;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.card {
+    padding: 15px;
+    border-radius: 12px;
+    background: #1e272e;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex: 0 1 calc(50% - 20px);
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 5px;
+    font-size: 14px;
+}
