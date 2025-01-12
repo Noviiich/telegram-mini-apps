@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.css";
 
 interface CardProps {
   id: number;
@@ -13,8 +14,10 @@ export const Card: React.FC<CardProps> = ({ name, image, onDeposit, onWithdraw }
     <div className="card">
       <img src={image} alt={name} />
       <h3>{name}</h3>
-      <button onClick={onDeposit}>Deposit</button>
-      <button onClick={onWithdraw}>Withdraw</button>
+      <div className="buttons">
+        <button onClick={onDeposit}>Deposit</button>
+        <button onClick={onWithdraw}>Withdraw</button>
+      </div>
     </div>
   );
 };
