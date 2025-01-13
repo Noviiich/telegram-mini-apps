@@ -1,21 +1,7 @@
-button {
-    background: #0984e3;
-    color: white;
-    border: none;
+.card button {
     padding: 8px 10px;
-    font-size: 6px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-  
-button:hover {
-    background: #74b9ff;
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.95);
+  font-size: 6px;
+  border-radius: 6px;
 }
 
 .card {
@@ -25,6 +11,8 @@ button:active {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     flex: 0 1 calc(50% - 20px);
+    justify-content: center;
+    align-items: center;
 }
   
 .card:hover {
