@@ -1,6 +1,15 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+
 .wallet-container {
-  position: fixed;
-  top: 10px;
+  position: absolute;
+  top: 0px;
   right: 10px;
   z-index: 1000;
 }
@@ -9,29 +18,28 @@
   font-size: 14px;
   padding: 8px 15px;
   border-radius: 6px;
-  transform: scale(0.85); /* Делаем кнопку чуть меньше */
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px; /* Добавляем отступ сверху, чтобы заголовок не сдвигался */
+  transform: scale(0.85);
 }
 
 .title {
-  font-size: 32px;
+  font-size: 36px;
   color: rgba(102, 170, 238, 0.91);
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 525px) {
   .wallet-container {
     right: 10px;
-    top: 15px;
+    top: 5px;
   }
 
   .wallet-container button {
     transform: scale(0.75); /* На мобильных кнопка ещё меньше */
   }
+  .title {
+    font-size: 28px;
+    margin-top: 60px;
+}
 }

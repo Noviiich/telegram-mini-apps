@@ -1,6 +1,9 @@
 .contract-list {
     display: grid;
     flex-direction: column;
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
 }
