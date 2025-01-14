@@ -7,9 +7,6 @@ export const Header = () => {
         <div className="wallet-container">
           <TonConnectButton />
         </div>
-        <header>
-          <h1 className="title">Tokenized Capital</h1>
-        </header>
       </>
     );
   };
