@@ -1,18 +1,23 @@
 import React from "react";
 import "./Card.css";
-import { CardInfo } from "../../App";
+import MyButton from "../ui/Button/MyButton";
+import { useNavigate } from "react-router-dom";
+
 
 interface CardProps {
-  card: CardInfo;
-  open: (card: CardInfo) => void
+  id: number;
+  name: string;
+  image: string;
 }
 
-export const Card: React.FC<CardProps> = ({ card, open}) => {
+export const Card: React.FC<CardProps> = ({id, name, image}) => {
+  const navigate = useNavigate();
+  const openCard = () => navigate(`/card/${id}`);
   return (
     <div className="card">
-      <img src={card?.image} alt={card?.name} />
-      <h3>{card?.name}</h3>
-      <button onClick={() => open(card)}>Detail</button>
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
+      <MyButton label="Detail" onClick={openCard}/>
     </div>
   );
 };
