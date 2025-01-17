@@ -1,0 +1,32 @@
+.card-info {
+    background-color: #1e272e;
+    padding: 50px;
+    z-index: 999;
+}
+
+.card-info img {
+    max-width: 80%;
+    display: block;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 2px;
+    right: 17px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.my-button {
+    padding: 10px 30px;
+}
