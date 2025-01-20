@@ -9,3 +9,7 @@ h1 {
   margin-bottom: 20px;
   color: #74b9ff; /* Голубой заголовок */
 }
+
+.title {
+  padding-top: 44px;
+}

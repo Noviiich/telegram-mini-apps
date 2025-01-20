@@ -37,7 +37,7 @@ function App() {
   return (
     <TonConnectUIProvider manifestUrl="https://noviiich.github.io/telegram-mini-apps/tonconnect-manifest.json">
       <div className="app">
-        {selectedCard && <ModalToken data={selectedCard} close={() => setSelectedCard(null)}/>}
+        {selectedCard && <ModalToken data={selectedCard} close={() => setSelectedCard(null)} position={window.scrollY}/>}
         <Header />
         <div>
           <h1 className="title">Tokenized Capital</h1>
