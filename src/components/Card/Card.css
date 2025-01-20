@@ -1,10 +1,3 @@
-.card button {
-    padding: 8px 10px;
-  font-size: 6px;
-  border-radius: 6px;
-  
-}
-
 .card {
     padding: 15px;
     border-radius: 12px;
@@ -12,6 +5,8 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     flex: 0 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -31,4 +26,26 @@
 .card h3 {
     margin: 5px;
     font-size: 14px;
+}
+
+.card button {
+    background: #0984e3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 10px;
+    font-size: 6px;
+    border-radius: 6px;
+}
+  
+.card button:hover {
+    background: #74b9ff;
+    transform: scale(1.05);
+}
+
+.card button:active {
+    transform: scale(0.95);
 }
